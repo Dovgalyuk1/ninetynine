@@ -53,7 +53,9 @@ h1.mark{
 h1.mark::before{content:"NINETY NINE";position:absolute;left:0;top:0;color:var(--ink);-webkit-text-stroke:12px var(--ink);z-index:-1}
 .lede{font-size:15.5px;font-weight:500;margin:0;max-width:62ch}
 .tickwrap{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.big99{font-family:"Silkscreen",monospace;font-size:clamp(26px,4vw,38px);color:var(--blue);letter-spacing:.14em;text-shadow:3px 3px 0 var(--ink),-2px 0 0 var(--ink),0 -2px 0 var(--ink),2px 0 0 var(--ink),0 2px 0 var(--ink)}
+.minibar{position:relative;width:clamp(130px,24vw,200px);height:26px;border:3px solid var(--ink);background:#dfe9cf;overflow:hidden;box-shadow:0 4px 0 var(--ink)}
+.minibar i{position:absolute;left:0;top:0;bottom:0;width:99%;background:repeating-linear-gradient(90deg,var(--blue) 0 13px,var(--blue-d) 13px 17px)}
+.mpct{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px}
 .tick{font-family:"Silkscreen",monospace;font-size:13px;background:var(--gold);border:3px solid var(--ink);padding:5px 9px;box-shadow:0 4px 0 var(--ink)}
 .links{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .btn{display:inline-block;cursor:pointer;font-family:"Silkscreen",monospace;font-size:12px;padding:12px 16px;background:var(--paper);color:var(--ink);border:4px solid var(--ink);box-shadow:0 6px 0 var(--ink);text-decoration:none}
@@ -146,7 +148,7 @@ h1.mark::before{content:"NINETY NINE";position:absolute;left:0;top:0;color:var(-
   <div class="intro">
     <div>
       <h1 class="mark">NINETY NINE</h1>
-      <div class="tickwrap"><span class="big99">99%</span><span class="tick">$99</span></div>
+      <div class="tickwrap"><span class="minibar"><i></i></span><span class="mpct">99%</span><span class="tick">$99</span></div>
       <p class="lede">The install has been stuck at ninety nine percent since 2017. It only moves when he puts his shoulder into it, so he is out there pushing the last percent forward by hand. Push it with him below.</p>
     </div>
     <div class="links">
